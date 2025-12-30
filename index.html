@@ -7,6 +7,7 @@
     <title>Maisaa Assy's Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -33,21 +34,26 @@
 
     <main>
         <section class="hero-section" id="home">
-            <h1 class="hero-title">
-                <span class="typing-text">Hello! I'm Maisaa Assy</span><span class="cursor">|</span>
-            </h1>
-
-            <img class="hi"
-                src="https://1drv.ms/i/c/b96650e262c14d7c/IQDtnn1f8EbNSruLOWuaiTUPAYtsffwNDMn3qmcEemC4WCY?e=fgGPDW"
-                alt="pic">
-
-
-            <p class="hero-tagline">Front-end Web Developer</p>
-            <p class="hero-bio"> I specialize in crafting responsive,performant, and accessible user interfaces,by
-                turning concepts into clean and maintainable code using HTML, CSS, and JavaScript</p>
-            <div class="home-logos">
-                <i class="bi bi-envelope" style="color:white;font-size: 40px; "></i>
-                <i class="bi bi-linkedin" style="color:white;font-size: 40px; "></i>
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Hello! I'm Maisaa Assy</span><span class="cursor">|</span>
+                    </h1>
+                    <p class="hero-tagline">Front-end Web Developer</p>
+                    <p class="hero-bio">
+                        I specialize in crafting responsive, performant, and accessible user interfaces,
+                        by turning concepts into clean and maintainable code using HTML, CSS, and JavaScript.
+                    </p>
+                    <div class="home-logos">
+                        <a href="#contact">
+                            <i class="bi bi-envelope" style="color:white; font-size: 40px;"></i></a>
+                        <a href="https://github.com/Maisaa-1">
+                            <i class="fa-brands fa-github" style="color:white;font-size:40px"></i></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/new-image.jfif">
+                </div>
             </div>
         </section>
 
@@ -76,129 +82,98 @@
                                 canvas into a website.</p>
                         </div>
                     </div>
-
-                    <button class="cv-download">Open CV</button>
+                    <a href="https://docs.google.com/document/d/1pzlS3WKhDauH6OCTKGeZbRV0XFAN5W67t_eEkNBwc70/edit?usp=sharing">
+                    <button class="cv-download">Open CV</button></a>
                 </div>
             </div>
         </section>
         <section id="skills" class="skills-section">
             <div class="container">
-                <h2 class="section-heading1">Coding Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3 class="skill-title">HTML</h3>
-
-                        <div class="proficiency-bar">
+                <div class="technical-skills">
+                    <h2 class="section-heading1">Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3 class="skill-title">HTML</h3>
                             <div class="proficiency-bar html-progress" data-level="95%">
                                 <div class="progress-bar"></div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3 class="skill-title">CSS</h3>
-                        <div class="proficiency-bar">
+                        <div class="skill-card">
+                            <h3 class="skill-title">CSS</h3>
                             <div class="proficiency-bar css-progress" data-level="90%">
                                 <div class="progress-bar"></div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3 class="skill-title">JavaScript</h3>
-                        <div class="proficiency-bar">
-                            <div class="proficiency-bar js-progress" data-level="75%">
+                        <div class="skill-card">
+                            <h3 class="skill-title">JavaScript</h3>
+                            <div class="proficiency-bar js-progress" data-level="50%">
                                 <div class="progress-bar"></div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3 class="skill-title">Python</h3>
-                        <div class="proficiency-bar">
+                        <div class="skill-card">
+                            <h3 class="skill-title">Python</h3>
                             <div class="proficiency-bar python-progress" data-level="80%">
                                 <div class="progress-bar"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!--<h2 class="section-heading">
-                        <h3 id="softskills">Soft Skills</h3> -->
-            <div class ="skills2"></div>
-            <div class="soft-skills-grid">
-                <div class="soft-skill-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Leadership and Influence</h3>
+                <div class="soft-skills-container">
+                    <h2 class="section-heading1">Soft Skills</h2>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h3>Leadership and Influence</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Leadership</h3>
+                                    <p>Involves being a scout leader and initiating many projects and events, mentoring
+                                        others, and leading school projects by reinforcing communication and cooperation
+                                        as well as the engagement of all members</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
-                            <h3>Leadership</h3>
-                            <p>Involves being a scout leader and initiating many projects and events,
-                                mentoring
-                                others, and leading school projects by reinforcing communication and
-                                cooperation
-                                as well as the engagement of all members</p>
-
+                        <div class="soft-skill-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h3>Critical Thinking and Problem Solving</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Critical Thinking and Problem Solving</h3>
+                                    <p>Embodied through logical thinking and finding clear and concise solutions for
+                                        complex and intricate real-world and technical problems</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="soft-skill-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Critical Thinking and Problem Solving</h3>
+                        <div class="soft-skill-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h3>Time Management</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Time Management</h3>
+                                    <p>My time management centers on strategic prioritization and disciplined execution.
+                                        I leverage structured scheduling and task-breakdown techniques to consistently
+                                        meet high-priority deadlines while maximizing output and maintaining quality</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
-                            <h3>Critical Thinking and Problem Solving</h3>
-                            <p>Embodied through logical thinking and finding clear and concise solutions for
-                                complex and intircate real-world and technical problems </p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="soft-skill-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Time Management</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Time Management</h3>
-                            <p>My time management centers on strategic prioritization and disciplined
-                                execution.I leverage structured scheduling and task-breakdown techniques to
-                                consistently meet-high priority deadlines while maximizing output and
-                                maintaining quality</p>
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="soft-skill-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Adaptability</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Adaptability</h3>
-                            <p>Having the ability to quickly adapt to different team structures and working
-                                environments, leveraging changes to optimize productivity and outcomes</p>
-
-
+                        <div class="soft-skill-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h3>Adaptability</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Adaptability</h3>
+                                    <p>Having the ability to quickly adapt to different team structures and working
+                                        environments, leveraging changes to optimize productivity and outcomes</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
-
-
-
-            </div>
-            </div>
-
         </section>
 
         <section id="projects" class="projects-section">
@@ -218,7 +193,8 @@
                                 <span class="tag">JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="  " class="link github-link">Code (GitHub)</a>
+                                <a href="https://github.com/Maisaa-1/Guide-to-my-country.git" target="  "
+                                    class="link github-link">Code <i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -228,13 +204,15 @@
                         </div>
                         <div class="project-details">
                             <h3 class="project-title">Pixel Art Project</h3>
+                            <p class="project-description">Interactive pixel art project to get creative with.</p>
                             <div class="project-tags">
                                 <span class="tag">CSS</span>
                                 <span class="tag">HTML</span>
                                 <span class="tag">Javascript</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="" class="link github-link">Code (GitHub)</a>
+                                <a href="https://github.com/Maisaa-1/Pixel-Art.git" target=""
+                                    class="link github-link">Code <i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -245,13 +223,15 @@
                         </div>
                         <div class="project-details">
                             <h3 class="project-title">Interactive Card Design</h3>
+                            <p class="project-description">Interactive card to share with others.</p>
                             <div class="project-tags">
                                 <span class="tag">CSS</span>
                                 <span class="tag">HTML</span>
                                 <span class="tag">Javascript</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="" class="link github-link">Code (GitHub)</a>
+                                <a href="https://github.com/Maisaa-1/Interactive-Card.git" target=""
+                                    class="link github-link">Code <i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -261,13 +241,16 @@
                         </div>
                         <div class="project-details">
                             <h3 class="project-title">Book Recommender Program</h3>
+                            <p class="project-description">A python program that suggests users app based on their
+                                preferences.</p>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">Data Structures</span>
                             </div>
                             <div class="project-links">
 
-                                <a href="#" target="_blank" class="link github-link">Code (GitHub)</a>
+                                <a href="https://trinket.io/python/a80da31e2537" target="_blank"
+                                    class="link github-link">Code <i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                     </div>
