@@ -44,7 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 50);
 });
 
-const flipCards=document.querySelectorAll(".flipping-card")
+const preloader=document.getElementById("preloader")
+window.addEventListener("load",hidePreloader)
+function hidePreloader(){
+    preloader.style.display="none"
+}
 
 
 

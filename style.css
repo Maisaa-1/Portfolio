@@ -632,6 +632,18 @@ textarea:focus {
     margin:auto
 }
 
+
+#preloader{
+    z-index:90000000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    display: flex;
+    justify-content: center;
+}
 /*  #9adfdf*/
 /*lab(79.21% -12.53 2.01 / 0.8);*/
 /*<a href="" download="">Download CV (pdf)</a>*/
