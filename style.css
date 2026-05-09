@@ -644,6 +644,132 @@ textarea:focus {
     display: flex;
     justify-content: center;
 }
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-bio {
+        width: 100%;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .soft-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .name-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Phones (<= 768px) */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        white-space: normal;
+        text-align: center;
+    }
+
+    .home-logos {
+        justify-content: center;
+    }
+
+    .about-section {
+        padding: 50px 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .section-heading,
+    .section-heading1 {
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+
+/* Small Phones (<= 480px) */
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-tagline {
+        font-size: 16px;
+    }
+
+    .hero-bio {
+        font-size: 16px;
+    }
+
+    .cv-download {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .project-thumbnail {
+        height: 150px;
+    }
+}
 /*  #9adfdf*/
 /*lab(79.21% -12.53 2.01 / 0.8);*/
 /*<a href="" download="">Download CV (pdf)</a>*/
