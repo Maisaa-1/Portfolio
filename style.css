@@ -20,64 +20,160 @@ body {
     overflow-x: hidden;
 
 }
-*{
+* {
     box-sizing: border-box;
 }
 
-.home-logos{
-    display:flex;
-    gap:20px;
-    padding-left:80px;
-    margin-top:0
+/* ================= HOME LOGOS ================= */
+
+.home-logos {
+    display: flex;
+    gap: 20px;
+    padding-left: 80px;
+    margin-top: 0;
 }
 
+/* ================= HEADER ================= */
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;        
+    justify-content: space-between; 
+    
+    background-color: #141414;  
     color: #f0f0f0;
-    font-size: 20px;
-    position: relative;
-    box-shadow: 0 10px 30px #00ffff;
-    height: 75px;
-    margin-bottom: 60px;
-    padding-left: 30px;
-    position: fixed;
-    box-sizing: border-box;
-    width:100%;
-    background-color: #141414;
-    z-index: 100;
+    
+    padding: 0 20px;            
+    height: 90px;               
+    
+    position: sticky;         
+    width: 100%;
+    z-index: 1000;              
 
+    /* The Lighting Effect Base */
+    border-bottom: 2px solid #00ffff; /* The sharp center line */
 }
+
+/* The Blue Lighting Glow (Desktop Only via pseudo-element) */
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Positions the glow slightly below the header */
+    left: 0;
+    width: 100%;
+    height: 15px; /* Adjust thickness of the glow */
+    background: radial-gradient(ellipse at center, rgba(0, 255, 255, 0.4) 0%, rgba(0, 255, 255, 0) 70%);
+    pointer-events: none; /* Allows clicks to pass through to content below */
+    filter: blur(8px);
+}
+
+/* ================= LOGO ================= */
+
+#logo {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+}
+
+#logo img {
+    display: block; 
+}
+
+/* ================= NAVBAR ================= */
 
 nav {
-    padding-right: 40px;
-    padding-left: 20px;
-    background-color: linear-gradient(135deg, #1478F6, #7777 100%);
-
+    padding-left: 10px;
 }
 
-nav ul li {
-    display: inline-block;
-    padding-right: 50px;
-
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
     color: #f0f0f0;
     text-decoration: none;
     transition: color 0.5s, border-bottom 0.3s;
-    gap: 20px;
     font-weight: bold;
-
-
 }
 
 nav ul li a:hover {
     color: #00ffff;
-    text-shadow: 2px 2px 5px #141414;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
 
+/* ================= MOBILE MENU ================= */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #f0f0f0;
+    margin-left: auto; 
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    header {
+        display: flex;             
+        align-items: center;       
+        justify-content: space-between; 
+        padding: 0 20px;
+        height: 75px;              
+        position: relative;        
+        /* Remove or soften the glow for mobile if it looks too cluttered */
+        border-bottom: 1px solid #00ffff;
+    }
+
+    /* Optional: Turn off the heavy glow effect on small screens */
+    header::after {
+        display: none; 
+    }
+
+    .menu-icon {
+        display: block;            
+        cursor: pointer;
+        z-index: 1001;             
+    }
+
+    nav {
+        position: absolute;
+        top: 75px;                 
+        left: 0;
+        width: 100%;
+        background-color: #141414;
+        max-height: 0;             
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        z-index: 1000;             
+        /* Add a glow to the bottom of the dropdown instead */
+        border-bottom: 2px solid #00ffff;
+    }
+
+    #menu-toggle:checked ~ nav {
+        max-height: 400px;         
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 0;
+    }
+
+    .home-logos {
+        padding-left: 20px;
+        gap: 15px;
+    }
 }
 .hero-container{
     display:flex;
