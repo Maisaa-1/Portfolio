@@ -306,9 +306,9 @@ nav ul li a:hover {
 #overview{
     color:transparent;
     background: linear-gradient( #00ffff,#f0f0f0);
+    background-clip: text;
     -webkit-background-clip: text;
     font-size: 20px;
-    font-family:hi;
     font-size:32px;
     margin-top:0
 
